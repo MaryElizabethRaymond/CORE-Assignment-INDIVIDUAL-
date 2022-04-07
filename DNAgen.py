@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-os.chdir('C:\\Users\\User\\OneDrive\\Documents\\R\\CORE Assignment (INDIVIDUAL)')
 outFile=open('./MyFileName.seq','w+')
 import random
 Nb=100
