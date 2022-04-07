@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+NNN=0
+while NNN <100: 
+	NNN +=1
+	outFile=open('./DNAseqNNN.seq')	
+	import random
+	Nb=1000
+	dna = ["A","G","C","T"]
+	random_sequence=''
+		for i in range(Nb):
+    	random_sequence+=random.choice(dna)
+	outFile.write(random_sequence)
+	outFile.close()
