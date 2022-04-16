@@ -1,6 +1,6 @@
 #Part B
 
-DNA<-read.csv("./GCR2.fsa") #creates object nucleotides from file  
+DNA<-read.csv("./FileName.seq") #creates object nucleotides from file  
 DNAChar<-as.character(DNA) #converts to character list 
 DNAsplit<-strsplit(DNAChar, split="") #splits individual characters into list of individuals characters (nucleotides )
 
@@ -23,7 +23,7 @@ write.csv(MyFunction(DNA), file = "FileName.count") #creates file with nucleotid
 
 
 #Part C 
-Numbers<-read.csv("./Book1.csv") #opens file  
+Numbers<-read.csv("./FileName.csv") #opens file  
 Numbers[,1]<-Numbers[,1]/mean(Numbers[,1]) 
 #converts column to proportion 
 Numbers[,2]<-Numbers[,2]/mean(Numbers[,2])
